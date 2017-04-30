@@ -1,0 +1,6 @@
+[package]
+name = "inventory-list"
+version = "0.1.0"
+authors = ["Julian <hahnjulian@hotmail.de>"]
+
+[dependencies]
