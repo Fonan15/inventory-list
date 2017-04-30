@@ -10,12 +10,12 @@ fn main() {
 	
 	io::stdin().read_line(&mut stuff)
 		.expect("Failed to read line");
-	let mut list = [&str; 20];//still false type
+	let mut list: [&str; 20];//still false type
 ///////////////////////////////Output part////////////////////////////////////////////////////
 	println!("Die Eingabe war: {}",stuff);
-	list[count] = stuff;
+	list[count] = &stuff;
 
-	println!("Die Liste sieht nun wiefolgt aus: {}", list);//print of the full array (all items)
+	println!("Die Liste sieht nun wiefolgt aus: {:?}", list);//print of the full array (all items)
 	count = count+1;//Increase of count and with it the place in the array
     }
 }
